@@ -12,14 +12,14 @@ const CampusServices = () => {
 
   return (
     <div className="mt-5">
-      <h2 className="text-lg font-semibold mb-3">Campus Services</h2>
+      <h2 className="text-lg font-semibold mb-3 text-tal-navy">Campus Services</h2>
       <div className="grid grid-cols-4 gap-2">
         {services.map((service) => (
           <button
             key={service.id}
             className="action-button"
           >
-            <div className="text-tal-purple">{service.icon}</div>
+            <div className="text-tal-navy">{service.icon}</div>
             <span className="text-xs mt-1">{service.name}</span>
           </button>
         ))}

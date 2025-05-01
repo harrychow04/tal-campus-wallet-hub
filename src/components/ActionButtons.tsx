@@ -26,7 +26,7 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
         onClick={onSendClick}
         className="action-button"
       >
-        <ArrowUpRight className="h-6 w-6 text-tal-purple mb-1" />
+        <ArrowUpRight className="h-6 w-6 text-tal-navy mb-1" />
         <span className="text-xs">Send</span>
       </button>
       
@@ -42,7 +42,7 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
         onClick={onTransferClick}
         className="action-button"
       >
-        <ArrowLeftRight className="h-6 w-6 text-tal-purple mb-1" />
+        <ArrowLeftRight className="h-6 w-6 text-tal-navy mb-1" />
         <span className="text-xs">Transfer</span>
       </button>
       

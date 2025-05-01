@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import WalletHeader from '@/components/WalletHeader';
 import TokenBalance from '@/components/TokenBalance';
@@ -20,6 +19,7 @@ const Index = () => {
   const [iotaBalance, setIotaBalance] = useState(42.8);
   const [talBalance, setTalBalance] = useState(215);
   const [iotaUsdValue, setIotaUsdValue] = useState(12.84);
+  const [talUsdValue, setTalUsdValue] = useState(38.7); // Added TAL USD value (215 * 0.18)
   
   // Modal states
   const [sendModalOpen, setSendModalOpen] = useState(false);
@@ -92,10 +92,13 @@ const Index = () => {
       const change = iotaUsdValue * (Math.random() * 0.04 - 0.02);
       const newUsdValue = Math.max(11, Math.min(14, iotaUsdValue + change));
       setIotaUsdValue(parseFloat(newUsdValue.toFixed(2)));
+      
+      // Update TAL USD value based on TAL balance (fixed rate of $0.18 per TAL)
+      setTalUsdValue(parseFloat((talBalance * 0.18).toFixed(2)));
     }, 30000);
     
     return () => clearInterval(interval);
-  }, [iotaUsdValue]);
+  }, [iotaUsdValue, talBalance]);
   
   // Tab content mapping
   const tabContent = {
@@ -113,13 +116,14 @@ const Index = () => {
           symbol="IOTA" 
           balance={`${iotaBalance.toFixed(1)} Mi`}
           usdValue={`$${iotaUsdValue} USD`}
-          icon="🔷"
+          icon="IOTA"
         />
         
         <TokenBalance 
           symbol="TAL" 
           balance={`${talBalance} TAL`}
-          icon="🟣"
+          usdValue={`$${talUsdValue} USD`}
+          icon="TAL"
         />
         
         <ActionButtons 

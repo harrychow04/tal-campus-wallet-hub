@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 262 82% 75%;
+    --primary: 215 32% 17%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -23,7 +23,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 262 82% 75%;
+    --accent: 215 32% 17%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 262 82% 75%;
+    --ring: 215 32% 17%;
 
     --radius: 0.75rem;
 
@@ -62,8 +62,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 262 82% 75%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 215 32% 17%;
+    --primary-foreground: 210 40% 98%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -71,7 +71,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 262 82% 75%;
+    --accent: 215 32% 17%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -79,7 +79,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 262 82% 75%;
+    --ring: 215 32% 17%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -103,7 +103,7 @@
   
   /* Improves tap targets on mobile */
   button, a {
-    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-tal-purple focus-visible:ring-offset-2;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-tal-navy focus-visible:ring-offset-2;
   }
   
   /* Prevent zoom on iOS when focusing inputs */
@@ -122,11 +122,11 @@
   }
   
   .tab-button.active {
-    @apply border-tal-purple text-tal-purple;
+    @apply border-tal-navy text-tal-navy;
   }
   
   .action-button {
-    @apply flex flex-col items-center justify-center p-3 bg-white rounded-lg shadow-sm border border-tal-gray-light hover:bg-tal-purpleLight transition-colors;
+    @apply flex flex-col items-center justify-center p-3 bg-white rounded-lg shadow-sm border border-tal-gray-light hover:bg-tal-gray-light transition-colors;
   }
   
   .token-card {

@@ -65,10 +65,10 @@ export default {
 				},
         // TAL Wallet custom colors
         tal: {
-          purple: '#9b87f5',
-          purpleDark: '#7E69AB',
-          purpleLight: '#E5DEFF',
-          blue: '#0EA5E9',
+          navy: '#1E2A38',
+          navyDark: '#0F172A',
+          navyLight: '#E5EEFF',
+          blue: '#04A1EC',
           blueLight: '#D3E4FD',
           red: '#ea384c',
           gray: {
